@@ -1,0 +1,16 @@
+{
+  "Url": {
+    "User_URL_1": "http://13.64.144.136/qa/account/login",
+    "User_URL_2": "http://13.64.144.136/qa/admin"
+  },
+  "Users": {
+    "User_1": {
+      "username": "agyatqa@gmail.com",
+      "password": "test@123"
+    },
+    "User_2": {
+      "username": "tj@simplebox.com",
+      "password": "{G$WGU"
+    }
+  }
+}

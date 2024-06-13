@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="File jet Suite" verbose="1" parallel="methods" thread-count="1">
+    <listeners>
+        <listener class-name="com.filejet.utilities.TestListener"/>
+    </listeners>
+    <parameter name="browser" value="CHROME"/>
+    <test name="File jet Suite">
+        <classes>
+            <class name="com.test.cases.TestCasesPartner">
+                <methods>
+                    <!--<include name="userLogin"/>-->
+                    <!--<include name="verifyAddGroup"/>-->
+                    <!--<include name="verifyValidationsForInvalidGroupData"/>-->
+                    <include name="verifyAddEntity"/>
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
