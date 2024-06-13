@@ -199,6 +199,10 @@ public class TestCasesAdmin extends HelpBase {
         //Assert.assertTrue(HomePage, "Add Partner button is not visible on Partner page");
         //partnersPage.clickAddPartnerBtn();
 
+        //git test
+        //Git test 2
+        // Git test 3
+
     }
 
 }
