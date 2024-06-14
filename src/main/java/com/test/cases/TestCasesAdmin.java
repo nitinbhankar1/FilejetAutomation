@@ -196,16 +196,14 @@ public class TestCasesAdmin extends HelpBase {
         Assert.assertEquals(homePage.verifyAdminHomePageLogoDisplayed(), "Dashboard",
                 "Home Page logo is not displaying");
         ordersPage = homePage.clickOnNavigationTabOrders(CommonTestData.NavigationLinks.ORDERS.getNavigationLink());
-        //Assert.assertTrue(HomePage, "Add Partner button is not visible on Partner page");
-        //partnersPage.clickAddPartnerBtn();
+        Assert.assertTrue(ordersPage.verifyTakeActionButtonDisplayed(),"Take Action button is visible for the Orders");
+       ordersPage.clickTakeActionButton();
 
-        //git test
-        //Git test 2
-        // Git test 3
-        // Git test 4
-        // Git comment for laptop
+
+
 
     }
+
 
 }
 
