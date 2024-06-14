@@ -197,7 +197,7 @@ public class TestCasesAdmin extends HelpBase {
                 "Home Page logo is not displaying");
         ordersPage = homePage.clickOnNavigationTabOrders(CommonTestData.NavigationLinks.ORDERS.getNavigationLink());
         Assert.assertTrue(ordersPage.verifyTakeActionButtonDisplayed(),"Take Action button is visible for the Orders");
-       ordersPage.clickTakeActionButton();
+        ordersPage.clickTakeActionButton();
 
 
 
