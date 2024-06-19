@@ -33,4 +33,14 @@ public class OrderPage extends OrdersPageLocators {
         click(takeActionButton);
     }
 
+    public boolean verifyAssignButtonDisplayed(){
+        waitForVisible(assignButton);
+        ExtentTestManager.ReporterLog(("Verify 'Assign' button is displayed on Order Page"));
+        return isDisplayed(assignButton);
+    }
+
+    public void clickAssignButton(){
+        click(assignButton);
+    }
+
 }
