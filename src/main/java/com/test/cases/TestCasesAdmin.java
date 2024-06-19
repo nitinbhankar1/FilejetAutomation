@@ -200,7 +200,9 @@ public class TestCasesAdmin extends HelpBase {
         ordersPage.clickTakeActionButton();
         Assert.assertTrue(ordersPage.verifyAssignButtonDisplayed(),"Assign Button is visible for the Orders");
         ordersPage.clickAssignButton();
-
+        //Code to select drop down
+        Assert.assertTrue(ordersPage.verifySaveChangesButtonDisplayed(),"Save Changes button is visible for the Orders");
+        ordersPage.clickSaveChangesButton();
 
 
 

@@ -42,5 +42,15 @@ public class OrderPage extends OrdersPageLocators {
     public void clickAssignButton(){
         click(assignButton);
     }
+    public boolean verifySaveChangesButtonDisplayed(){
+        waitForVisible(saveChangesButton);
+        ExtentTestManager.ReporterLog(("Verify Save changes button is displayed"));
+        return isDisplayed(saveChangesButton);
+
+    }
+
+    public void clickSaveChangesButton(){
+        click(saveChangesButton);
+    }
 
 }
