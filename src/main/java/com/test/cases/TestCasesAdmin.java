@@ -189,7 +189,7 @@ public class TestCasesAdmin extends HelpBase {
     }
 
     @Test(description ="Verify user can see create and wait the partner orders in Admin")
-    public void verifyOrderActions () throws IOException{
+    public void verifyOrderActions () throws IOException {
 
         LoginPage loginPage = new LoginPage(HelpBase.driver);
         homePage = loginPage.loginPartnerUser();
@@ -200,8 +200,9 @@ public class TestCasesAdmin extends HelpBase {
         ordersPage.clickTakeActionButton();
         Assert.assertTrue(ordersPage.verifyAssignButtonDisplayed(),"Assign Button is visible for the Orders");
         ordersPage.clickAssignButton();
-        //Code to select drop down
-        Assert.assertTrue(ordersPage.verifySaveChangesButtonDisplayed(),"Save Changes button is visible for the Orders");
+        ordersPage.clickChooseUser();
+        ordersPage.selectUser();
+        Assert.assertTrue(ordersPage.verifySaveChangesButtonDisplayed(),"Save changes button is visible for the Orders");
         ordersPage.clickSaveChangesButton();
 
 

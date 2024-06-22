@@ -49,6 +49,14 @@ public class OrderPage extends OrdersPageLocators {
 
     }
 
+    public void clickChooseUser(){
+        click(chooseUserDropdown);
+    }
+
+    public void selectUser(){
+        click(selectUserDropDown);
+    }
+
     public void clickSaveChangesButton(){
         click(saveChangesButton);
     }
