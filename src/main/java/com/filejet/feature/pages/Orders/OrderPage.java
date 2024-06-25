@@ -56,7 +56,6 @@ public class OrderPage extends OrdersPageLocators {
     public void selectUser(){
         click(selectUserDropDown);
     }
-
     public void clickSaveChangesButton(){
         click(saveChangesButton);
     }
